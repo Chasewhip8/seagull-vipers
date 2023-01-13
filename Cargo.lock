@@ -1057,6 +1057,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd"
 
 [[package]]
+name = "seagull-vipers"
+version = "2.0.7"
+dependencies = [
+ "anchor-lang",
+ "anchor-spl",
+ "num-traits",
+ "spl-associated-token-account",
+ "spl-token",
+ "static-pubkey",
+]
+
+[[package]]
 name = "semver"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1349,25 +1361,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
-name = "vipers"
-version = "2.0.6"
-dependencies = [
- "anchor-lang",
- "anchor-spl",
- "num-traits",
- "spl-associated-token-account",
- "spl-token",
- "static-pubkey",
-]
-
-[[package]]
 name = "vipers-tests"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
+ "seagull-vipers",
  "spl-token",
- "vipers",
 ]
 
 [[package]]

@@ -11,7 +11,7 @@ use anchor_spl::{
     associated_token::get_associated_token_address,
     token::{self},
 };
-use vipers::*;
+use seagull_vipers::*;
 
 #[error_code]
 pub enum ErrorCode {
@@ -269,7 +269,7 @@ fn test_unwrap_bump() {
     let mut bumps: BTreeMap<String, u8> = BTreeMap::new();
     bumps.insert("test".to_string(), 1);
     let ctx = Context {
-        program_id: &vipers::ID,
+        program_id: &seagull_vipers::ID,
         accounts,
         remaining_accounts: &[],
         bumps,
